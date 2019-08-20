@@ -1,9 +1,18 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
+import NavBar from './components/NavBar'
+import DisplayOctocat from './components/DisplayOctocat'
 
 class App extends Component {
   render() {
-    return <HelloWorld />
+    console.log('Octodex')
+    return (
+      <main>
+        <NavBar />
+        <section>
+          <DisplayOctocat />
+        </section>
+      </main>
+    )
   }
 }
 
